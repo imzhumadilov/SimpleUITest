@@ -24,12 +24,12 @@ class UITests: XCTestCase {
         let changeTextButton = app.buttons["Change text"]
         
         changeTextButton.tap()
-        XCTAssertTrue(app.staticTexts[oldText].exists) // to confirm that text was changed to oldText after button tapped
+        XCTAssertTrue(app.staticTexts[oldText].exists, "Text wasn't change to new value after button tapped")
         
         changeTextButton.tap()
-        XCTAssertTrue(app.staticTexts[newText].exists) // to confirm that text was changed to newText after button tapped
+        XCTAssertTrue(app.staticTexts[newText].exists, "Text wasn't change to new value after button tapped")
         
         changeTextButton.tap()
-        XCTAssertTrue(app.staticTexts[oldText].exists) // to confirm that text was changed to oldText after button tapped
+        XCTAssertTrue(app.staticTexts[oldText].exists, "Text wasn't change to new value after button tapped")
     }
 }
