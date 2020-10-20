@@ -10,29 +10,21 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: - Outlets
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var passwordTextField: UITextField!
     
     // MARK: - Props
-    private var toChange = true
-    
-    // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        changeText()
-    }
+    let expectedPassword = "qwe"
 
     // MARK: - Actions
     @IBAction
-    func changeTextButtonTapped(_ sender: UIButton) {
-        toChange = !toChange
-        changeText()
+    func loginButtonTapped(_ sender: UIButton) {
+        
+        guard let password = passwordTextField.text,
+              password == expectedPassword else { return }
+        
+        let newVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "New VC") 
+        present(newVC, animated: true, completion: nil)
+        
     }
-    
-    // MARK: - Module functions
-    private func changeText() {
-        titleLabel.text = toChange ? "New text" : "Old text"
-    }
-    
 }
 

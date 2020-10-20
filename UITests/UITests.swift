@@ -14,22 +14,33 @@ class UITests: XCTestCase {
     override func tearDownWithError() throws { }
 
     func testCorrectWork() {
+    
+        let password = "qwe"
+
+        let app = XCUIApplication()
+        app.launch()
+
+        let passwordTextField = app.secureTextFields["Enter password"]
+        XCTAssertTrue(passwordTextField.exists, "No field to enter password")
+        passwordTextField.tap()
+        passwordTextField.typeText(password)
+
+        let loginButton = app.buttons["Login"]
+        XCTAssertTrue(loginButton.exists, "No login button")
+        loginButton.tap()
         
-        let newText = "New text"
-        let oldText = "Old text"
+        let newVCLabel = app.staticTexts["New VC"]
+        XCTAssertTrue(newVCLabel.exists, "Not present New VC")
+        
+    }
+    
+    func testWithPageObject() {
+        
+        let password = "qwe"
         
         let app = XCUIApplication()
-        app.activate()
+        app.launch()
         
-        let changeTextButton = app.buttons["Change text"]
-        
-        changeTextButton.tap()
-        XCTAssertTrue(app.staticTexts[oldText].exists, "Text wasn't change to new value after button tapped")
-        
-        changeTextButton.tap()
-        XCTAssertTrue(app.staticTexts[newText].exists, "Text wasn't change to new value after button tapped")
-        
-        changeTextButton.tap()
-        XCTAssertTrue(app.staticTexts[oldText].exists, "Text wasn't change to new value after button tapped")
+        login(with: password)
     }
 }
