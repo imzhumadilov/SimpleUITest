@@ -16,8 +16,8 @@
 		2886A271253DF91B003300B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2886A270253DF91B003300B8 /* Assets.xcassets */; };
 		2886A274253DF91B003300B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2886A272253DF91B003300B8 /* LaunchScreen.storyboard */; };
 		2886A283253DFB42003300B8 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886A282253DFB42003300B8 /* UITests.swift */; };
-		28A571D0253F67C40055E5A2 /* XCUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A571CF253F67C40055E5A2 /* XCUIApplication.swift */; };
-		28A571D6253F68070055E5A2 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A571D5253F68070055E5A2 /* XCTestCase.swift */; };
+		288902DE25406D8A00F24C96 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288902DD25406D8A00F24C96 /* MainViewControllerTests.swift */; };
+		288902E425406DD700F24C96 /* NewViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288902E325406DD700F24C96 /* NewViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		2886A280253DFB42003300B8 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2886A282253DFB42003300B8 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		2886A284253DFB42003300B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28A571CF253F67C40055E5A2 /* XCUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIApplication.swift; sourceTree = "<group>"; };
-		28A571D5253F68070055E5A2 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		288902DD25406D8A00F24C96 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
+		288902E325406DD700F24C96 /* NewViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,20 +103,20 @@
 		2886A281253DFB42003300B8 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				28A571CE253F678C0055E5A2 /* Extension */,
+				28A571CE253F678C0055E5A2 /* PageObjects */,
 				2886A282253DFB42003300B8 /* UITests.swift */,
 				2886A284253DFB42003300B8 /* Info.plist */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
 		};
-		28A571CE253F678C0055E5A2 /* Extension */ = {
+		28A571CE253F678C0055E5A2 /* PageObjects */ = {
 			isa = PBXGroup;
 			children = (
-				28A571CF253F67C40055E5A2 /* XCUIApplication.swift */,
-				28A571D5253F68070055E5A2 /* XCTestCase.swift */,
+				288902DD25406D8A00F24C96 /* MainViewControllerTests.swift */,
+				288902E325406DD700F24C96 /* NewViewControllerTests.swift */,
 			);
-			path = Extension;
+			path = PageObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2886A283253DFB42003300B8 /* UITests.swift in Sources */,
-				28A571D6253F68070055E5A2 /* XCTestCase.swift in Sources */,
-				28A571D0253F67C40055E5A2 /* XCUIApplication.swift in Sources */,
+				288902E425406DD700F24C96 /* NewViewControllerTests.swift in Sources */,
+				288902DE25406D8A00F24C96 /* MainViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

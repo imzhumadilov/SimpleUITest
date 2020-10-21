@@ -41,6 +41,10 @@ class UITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        login(with: password)
+        let mainVC = MainViewControllerTests()
+        mainVC.login(with: password)
+        
+        let newVC = NewViewControllerTests()
+        newVC.present()
     }
 }
