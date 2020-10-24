@@ -16,8 +16,8 @@
 		2886A271253DF91B003300B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2886A270253DF91B003300B8 /* Assets.xcassets */; };
 		2886A274253DF91B003300B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2886A272253DF91B003300B8 /* LaunchScreen.storyboard */; };
 		2886A283253DFB42003300B8 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886A282253DFB42003300B8 /* UITests.swift */; };
-		288902DE25406D8A00F24C96 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288902DD25406D8A00F24C96 /* MainViewControllerTests.swift */; };
-		288902E425406DD700F24C96 /* NewViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288902E325406DD700F24C96 /* NewViewControllerTests.swift */; };
+		288902DE25406D8A00F24C96 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288902DD25406D8A00F24C96 /* LoginPage.swift */; };
+		288902E425406DD700F24C96 /* InformationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288902E325406DD700F24C96 /* InformationPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		2886A280253DFB42003300B8 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2886A282253DFB42003300B8 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		2886A284253DFB42003300B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		288902DD25406D8A00F24C96 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
-		288902E325406DD700F24C96 /* NewViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewControllerTests.swift; sourceTree = "<group>"; };
+		288902DD25406D8A00F24C96 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		288902E325406DD700F24C96 /* InformationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +113,8 @@
 		28A571CE253F678C0055E5A2 /* PageObjects */ = {
 			isa = PBXGroup;
 			children = (
-				288902DD25406D8A00F24C96 /* MainViewControllerTests.swift */,
-				288902E325406DD700F24C96 /* NewViewControllerTests.swift */,
+				288902DD25406D8A00F24C96 /* LoginPage.swift */,
+				288902E325406DD700F24C96 /* InformationPage.swift */,
 			);
 			path = PageObjects;
 			sourceTree = "<group>";
@@ -232,8 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2886A283253DFB42003300B8 /* UITests.swift in Sources */,
-				288902E425406DD700F24C96 /* NewViewControllerTests.swift in Sources */,
-				288902DE25406D8A00F24C96 /* MainViewControllerTests.swift in Sources */,
+				288902E425406DD700F24C96 /* InformationPage.swift in Sources */,
+				288902DE25406D8A00F24C96 /* LoginPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

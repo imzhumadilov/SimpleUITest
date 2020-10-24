@@ -1,5 +1,5 @@
 //
-//  MainViewControllerTests.swift
+//  LoginPage.swift
 //  UITests
 //
 //  Created by Ilyas Zhumadilov on 21.10.2020.
@@ -7,9 +7,12 @@
 
 import XCTest
 
-class MainViewControllerTests {
+class LoginPage {
     
     // MARK: - Props
+    let app: XCUIApplication
+    var isVisible = false
+    
     var passwordTextField: XCUIElement {
         return XCUIApplication().secureTextFields["Enter password"]
     }
@@ -18,8 +21,10 @@ class MainViewControllerTests {
         return XCUIApplication().buttons["Login"]
     }
     
-    var newVCLabel: XCUIElement {
-        return XCUIApplication().staticTexts["New VC"]
+    // MARK: - Initilization
+    init(app: XCUIApplication) {
+        self.app = app
+        isVisible = true
     }
     
     // MARK: - Active functions
@@ -30,8 +35,8 @@ class MainViewControllerTests {
     }
     
     func clickLoginButton() {
-        loginButton.tap()
         XCTAssertTrue(loginButton.exists, "No login button")
+        loginButton.tap()
     }
     
     func login(with password: String) {
